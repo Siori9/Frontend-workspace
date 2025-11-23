@@ -1,0 +1,19 @@
+{
+  "name": "storybook-root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.0.8",
+    "@storybook/html-vite": "^10.0.8",
+    "storybook": "^10.0.8"
+  }
+}

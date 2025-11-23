@@ -1,0 +1,11 @@
+{
+  "name": "frontend-workspace",
+  "private": true,
+  "scripts": {
+    "sb:css": "npm --prefix tps/tp-css run storybook -- --port 6006 --no-open",
+    "sb:react": "npm --prefix tps/tp-framework/react run storybook -- --port 6007 --no-open",
+    "sb:vue": "npm --prefix tps/tp-framework/vuejs run storybook -- --port 6008 --no-open",
+    "sb:root": "npm --prefix storybook-root run storybook -- --port 8080",
+    "sb:all": ""
+  }
+}

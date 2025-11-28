@@ -55,7 +55,7 @@ export class CodeResultComponent implements AfterViewInit {
   private scopeCss(css: string, prefix: string): string {
     return css
       .split('}')
-      .map(rule => {
+      .map((rule) => {
         const parts = rule.split('{');
         if (parts.length < 2) return '';
         const selector = parts[0].trim();
@@ -63,12 +63,10 @@ export class CodeResultComponent implements AfterViewInit {
         if (!selector || !body) return '';
         const scopedSelector = selector
           .split(',')
-          .map(s => `${prefix} ${s.trim()}`)
+          .map((s) => `${prefix} ${s.trim()}`)
           .join(', ');
         return `${scopedSelector} { ${body} }`;
       })
       .join(' ');
   }
 }
-
-

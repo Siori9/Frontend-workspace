@@ -1,4 +1,4 @@
-import {CodeResultComponent} from '../../../app/components/code-result.component';
+import { CodeResultComponent } from '../../app/components/code-result.component';
 
 export default {
   title: 'CSS-Casquade/Lesson',
@@ -6,8 +6,8 @@ export default {
 };
 
 export const Introduction = {
-    render: () => ({
-      template: `
+  render: () => ({
+    template: `
       <div class="lesson">
         <h1>La cascade</h1>
         <p>CSS signifie "Cascading Style Sheets" (feuilles de style en cascade).</p>
@@ -21,11 +21,11 @@ export const Introduction = {
             <li><b>Importance</b> : certaines règles CSS sont plus pondérées que d'autres, en particulier avec le type de règle !important.</li>
         </ol>
       </div>
-    `
-  })
+    `,
+  }),
 };
 
-export const Position= {
+export const Position = {
   render: () => ({
     template: `
       <div class="lesson">
@@ -139,8 +139,6 @@ span {
   color: blue;
 }
       `,
-    }
+    },
   }),
 };
-
-

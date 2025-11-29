@@ -14,10 +14,6 @@ const config = {
 
   // ✅ Storybook Composition — add children Storybooks
   refs: {
-    css: {
-      title: "TP CSS",
-      url: "http://localhost:6006",
-    },
     react: {
       title: "TP Framework : React",
       url: "http://localhost:6007",
@@ -25,6 +21,10 @@ const config = {
     vue: {
       title: "TP Framework : Vue",
       url: "http://localhost:6008",
+    },
+    css: {
+      title: "TP CSS",
+      url: "http://localhost:6006",
     },
   },
 };

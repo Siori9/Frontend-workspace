@@ -1,3 +1,73 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta } from '@storybook/blocks';
 
 <Meta title="Introduction" />
+
+# Introduction au TP Vue.js
+
+Bienvenue dans ce TP Vue.js !
+Avant de commencer les exercices, voici ce que vous devez savoir pour pouvoir créer vos composants.
+
+---
+
+## 1️⃣ Documentation officielle
+
+- [Vue.js Docs (en français)](https://fr.vuejs.org/)
+- [Composition API](https://fr.vuejs.org/guide/introduction.html#composition-api)
+- [Template syntax](https://fr.vuejs.org/guide/essentials/template-syntax.html)
+
+Ces liens contiennent tout ce dont vous aurez besoin pour vos exercices.
+
+---
+
+## 2️⃣ Structure d’un composant Vue 3
+
+Un composant Vue moderne suit généralement cette architecture :
+
+```vue
+<template>
+  <button @click="increment">{{ label }} — {{ count }}</button>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import './Button.css';
+
+defineProps({
+  label: String
+});
+
+const count = ref(0);
+
+const increment = () => {
+  count.value++;
+};
+</script>
+
+<style scoped>
+button {
+  padding: 0.5rem 1rem;
+  background-color: #42b983;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+```
+
+## Points clés
+
+- **Template** : structure HTML affichée.
+- **Props** : pour transmettre des données au composant.
+- **State réactif** : via `ref` ou `reactive`.
+- **Fonctions internes** : logique spécifique au composant.
+- **Composition API** : `setup()`, `ref`, `reactive`, `computed`.
+
+## Bonnes pratiques
+
+- Un **composant = un fichier `.vue`**.
+- Le **nom du composant = nom du fichier**.
+- CSS **scopé** pour éviter les conflits (`<style scoped>`).
+- Favoriser la **réutilisation et la modularité**.
+
+> Vous êtes maintenant prêts à démarrer les exercices et à créer vos premiers composants Vue !

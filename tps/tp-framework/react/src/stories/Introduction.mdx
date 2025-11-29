@@ -1,3 +1,66 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta } from '@storybook/blocks';
 
 <Meta title="Introduction" />
+
+# Introduction au TP React
+
+Bienvenue dans ce TP React !
+Avant de commencer les exercices, voici ce que vous devez savoir pour pouvoir créer vos composants.
+
+---
+
+## 1️⃣ Documentation officielle
+
+- [React Docs (en français)](https://fr.reactjs.org/docs/getting-started.html)
+- [Hooks](https://fr.reactjs.org/docs/hooks-intro.html)
+- [JSX](https://fr.reactjs.org/docs/introducing-jsx.html)
+
+Ces liens contiennent tout ce dont vous aurez besoin pour vos exercices.
+
+---
+
+## 2️⃣ Structure d’un composant React
+
+Un composant React moderne suit généralement cette architecture :
+
+```jsx
+// 1. Importations
+import { useState } from "react";
+import "./Button.css";
+
+// 2. Déclaration du composant
+export default function Button({ label }) {
+  // 3. Hooks et logique interne
+  const [count, setCount] = useState(0);
+
+  // 4. Fonctions internes
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
+  // 5. Rendu JSX
+  return (
+    <button className="btn" onClick={handleClick}>
+      {label} — {count}
+    </button>
+  );
+}
+```
+
+## Points clés
+
+- **Imports** : toujours en haut du fichier.
+- **Composant** : `function MonComposant(props)` ou `const MonComposant = () => {}`.
+- **Hooks** : `useState`, `useEffect`, etc.
+- **Fonctions internes** : logique spécifique au composant.
+- **JSX** : ce que le composant affiche à l’écran.
+
+## Bonnes pratiques
+
+- Un **composant = un fichier**.
+- Le **nom du composant = nom du fichier**.
+- CSS **spécifique au composant** pour éviter les conflits.
+- Favoriser la **réutilisation et la modularité**.
+
+> Vous êtes maintenant prêts à démarrer les exercices et à créer vos premiers composants React !
+

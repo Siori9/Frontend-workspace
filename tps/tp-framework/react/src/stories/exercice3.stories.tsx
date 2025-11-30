@@ -17,6 +17,7 @@ export const Consigne = () => (
             <li style={{ marginBottom: '0.5rem' }}>Afficher un message “Chargement…” pendant la récupération</li>
             <li style={{ marginBottom: '0.5rem' }}>Afficher “Erreur…” en cas de problème</li>
             <li style={{ marginBottom: '0.5rem' }}>Afficher la liste des utilisateurs</li>
+            <li style={{ marginBottom: '0.5rem' }}>Cliquer sur un utilisateur pour afficher ses détails sous la liste</li>
         </ul>
         <p>Notions couvertes : <code>fetch</code>, état (<code>loading/error/data</code>), rendu conditionnel, interaction simple.</p>
     </div>

@@ -21,6 +21,7 @@ export const Consigne = () => ({
           <li style="margin-bottom: 0.5rem;">“Erreur…”</li>
           <li style="margin-bottom: 0.5rem;">Ou la liste des utilisateurs</li>
         </ul>
+        <li style="margin-bottom: 0.5rem;">Permet de cliquer sur un utilisateur et afficher ses détails sous la liste</li>
       </ul>
     </div>
   `,

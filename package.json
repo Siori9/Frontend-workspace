@@ -1,11 +1,6 @@
 {
   "name": "frontend-workspace",
   "private": true,
-  "workspaces": [
-    "tps/tp-css",
-    "tps/tp-framework/react",
-    "tps/tp-framework/vuejs"
-  ],
   "scripts": {
     "sb:css": "npm --prefix tps/tp-css run storybook -- --port 6006 --no-open",
     "sb:react": "npm --prefix tps/tp-framework/react run storybook -- --port 6007 --no-open",
@@ -18,5 +13,10 @@
   },
   "devDependencies": {
     "prettier": "^3.7.1"
-  }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "engineStrict": true
+
 }

@@ -10,10 +10,10 @@ Clonez le projet puis installez toutes les dépendances via npm :
 
 ```bash
 git clone git@github.com:Siori9/Frontend-workspace.git
-cd frontend-workspace
-npm install
+cd Frontend-workspace
+./install.sh
 ```
-> Grâce à la configuration workspaces, toutes les dépendances des sous-projets seront installées automatiquement.
+> Grâce au script `install.sh`, toutes les dépendances des sous-projets seront installées automatiquement.
 
 ## Démarrage
 
